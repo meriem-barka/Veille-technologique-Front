@@ -1,0 +1,160 @@
+:root {
+  /* Styles pour la racine du document */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* Styles pour le corps du document */
+  background-color: #66bb6a;
+  margin: 0;
+  min-height: 100vh; /* Laissez min-height seulement si nécessaire */
+  min-width: 100vw;
+}
+
+h1 {
+  /* Styles pour les titres de niveau 1 */
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  /* Styles pour les boutons */
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  /* Styles pour les boutons lorsqu'ils sont survolés */
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  /* Styles pour les boutons lorsqu'ils sont focus */
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  /* Styles pour les cartes */
+  padding: 2em;
+}
+
+#app {
+  /* Styles pour l'élément avec l'ID 'app' */
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  padding: 0 40px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Media query pour les écrans larges (ordinateurs de bureau, par exemple) */
+  .header {
+    padding: 0 60px;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .lane {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+  }
+
+  .lane-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .kanban-board {
+    display: inline-block;
+  }
+  .column {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 250px;
+  }
+
+  .tasks {
+    margin-top: 10px;
+  }
+
+  .task {
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    background-color: #fcfcfc;
+  }
+
+  .task h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .task p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Media query pour le thème de couleur claire */
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
